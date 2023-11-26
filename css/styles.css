@@ -122,6 +122,28 @@ body {
   padding-bottom: 24px;
 }
 
+/*.decor::before {
+  width: 48px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  content: "111 ";
+  display: block;
+}*/
+
+.decor::after {
+  width: 48px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  content: "";
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  position: absolute;
+}
+
 .menu-link:hover,
 .menu-contact:hover {
   color: #404bbf;
