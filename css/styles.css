@@ -58,17 +58,14 @@ body {
   display: flex;
   align-items: center;
   list-style-type: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  margin-right: auto;
 }
 
 .container {
   width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .hero {
@@ -273,10 +270,12 @@ body {
 }
 
 .next-text {
+  color: #434455;
   font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
 }
 
 /* SECTION 3 */
@@ -387,11 +386,32 @@ body {
   row-gap: 48px;
 }
 
+.portfolio {
+  position: relative;
+}
+
+.portfolio:hover .overlay {
+  position: absolute;
+}
+
 .app_categories {
   padding: 32px 16px;
   text-align: left;
   border: 1px solid var(--CORNFLOWER, #e7e9fc);
   border-top: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 40px 32px 164px;
+  color: #f4f4fd;
+  background-color: #4d5ae5;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  transform: translateY(100%);
 }
 
 .icons_app {
@@ -400,31 +420,9 @@ body {
   position: relative;
   overflow: hidden;
 }
-
 .icons_app:hover .overlay {
   transform: translateY(0%);
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #4d5ae5;
-  width: 100%;
-  height: 100%;
-  color: #f4f4fd;
-  padding: 40px 32px 164px;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.32px;
-  overflow: auto;
-  transform: translateY(100%);
   transition: transform 250ms linear;
-}
-.omg {
 }
 
 /* footer */
