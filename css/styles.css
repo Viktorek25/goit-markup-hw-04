@@ -471,6 +471,7 @@ body {
   box-sizing: border-box;
   width: 208px;
   color: rgb(67, 68, 85);
+  display: flex;
 }
 
 .social_media_footer {
