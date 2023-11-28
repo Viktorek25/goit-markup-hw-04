@@ -426,7 +426,9 @@ body {
 }
 
 .icons_app:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  transform: translateY(0%);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .icons_app:hover .overlay {
@@ -459,9 +461,17 @@ body {
   border-top: none;
 }
 
+.app_paragraf {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding: 40px 32px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* FOOTER */
 
 .happy_end {
+  margin-right: 120px;
 }
 
 .section_five {
@@ -474,6 +484,7 @@ body {
 
 .container_footer {
   display: flex;
+  align-items: baseline;
   width: 1158px;
   margin-left: 100px;
   margin-right: auto;
@@ -552,7 +563,10 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.tuk:hover,
+.tuk:hover {
+  background-color: #31d0aa;
+}
+
 .tuk:focus {
   background-color: #31d0aa;
 }
