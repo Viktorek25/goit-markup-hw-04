@@ -169,7 +169,7 @@ body {
 }
 
 .link-contacts {
-  color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-contact {
@@ -370,7 +370,7 @@ body {
 }
 
 .sl_list:hover,
-.sl_list:fokus {
+.sl_list:focus {
   background-color: #404bbf;
 }
 
@@ -383,6 +383,11 @@ body {
   width: 40px;
   height: 40px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social_list_link:hover,
+.social_list_link:focus {
+  background-color: #404bbf;
 }
 
 .sl_icons_our_team {
@@ -456,7 +461,7 @@ body {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-/* footer */
+/* FOOTER */
 
 .section_five {
   background-color: #2e2f42;
@@ -523,6 +528,7 @@ body {
   display: flex;
   gap: 16px;
 }
+
 .tuk {
   width: 40px;
   height: 40px;
