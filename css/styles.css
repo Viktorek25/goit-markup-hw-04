@@ -122,7 +122,7 @@ body {
   padding-top: 24px;
   padding-bottom: 24px;
   position: relative;
-  color: #404bbf;
+  color: #2e2f42;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -131,15 +131,12 @@ body {
 }*/
 
 .decor::after {
-  width: 48px;
+  width: 100%;
   height: 4px;
-  background-color: #404bbf;
+  background-color: #2e2f42;
   border-radius: 2px;
   content: "";
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -179,7 +176,6 @@ body {
 /* SECTION 1 */
 
 .section_one {
-  max-width: 1440px;
   padding: 188px 0;
   background-color: #2e2f42;
   background-repeat: no-repeat;
@@ -266,19 +262,6 @@ body {
   background-color: #f4f4fd;
   border-radius: 4px;
   margin-bottom: 8px;
-}
-
-.icon-antenna,
-.icon-clock,
-.icon-diagram,
-.icon-astronaut {
-  padding: 24px 100px;
-  width: 264px;
-  height: 112px;
-  flex-shrink: 0;
-  border-radius: 4px;
-  border: 1px solid var(--LIGHT-SLATE, #8e8f99);
-  background: var(--CLOUD, #f4f4fd);
 }
 
 .title-three {
@@ -487,25 +470,19 @@ body {
 /* FOOTER */
 
 .happy_end {
-  margin-right: 120px;
 }
 
 .section_five {
   background-color: #2e2f42;
-  width: 1440px;
+  width: auto;
   margin-right: auto;
   margin-left: auto;
   padding: 100px 0;
 }
 
-.container_footer {
+.con_footer {
   display: flex;
   align-items: baseline;
-  width: 1158px;
-  margin-left: 100px;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .logo-footer {
